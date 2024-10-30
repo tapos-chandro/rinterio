@@ -12,6 +12,15 @@
       rel="stylesheet"
     />
 
+    <!-- font-awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- daisyui and tailwind css cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -26,18 +35,128 @@
         theme: {
           extend: {
             colors: {
-              clifford: 'red'
+              clifford: 'red',
+              primaryTextColor: '#212121',
+              secondaryTextColor: '#494949',
+              btnBgPrimary: '#ABEF5F',
+              btnBgSecondary: '#d1f5ab'
             },
-            fontFamily:{
-                inter:"Inter"
+            fontFamily: {
+              inter: 'Inter'
             }
-            
           }
         }
       }
     </script>
   </head>
   <body class="font-inter">
-    
+    <header class="h-[700px] bg-gradient-to-b from-[#f5f5f5] to-[#ffffff]">
+      <section class="container px-5 mx-auto lg:p-0">
+        <!-- nav start  -->
+        <nav>
+          <div class="p-0 lg:pt-12 md:pt-10 navbar">
+            <div class="navbar-start">
+              <div class="flex justify-center space-x-1 justify-items-center">
+                <span
+                  class="text-lg bg-btnBgPrimary py-1 px-[10px] rounded-full -rotate-45"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+                <a class="text-3xl font-extrabold hover:cursor-pointer"
+                  >Rinterio</a
+                >
+              </div>
+            </div>
+            <div class="hidden navbar-center lg:flex">
+              <ul
+                class="px-1 text-base font-normal menu menu-horizontal text-slate-500"
+              >
+                <li class="text-slate-800"><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contacts Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <button
+                class="hidden px-5 py-3 space-x-0 rounded-full bg-btnBgPrimary lg:inline-block md:inline-block"
+              >
+                <a
+                  class="px-5 text-xl font-extrabold rounded-full text-primayTextColor"
+                  >Book Consult</a
+                >
+                <span
+                  class="text-lg bg-btnBgPrimary h-[32px] w-[32px] rounded-full inline-block -rotate-45 bg-primaryTextColor text-white"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </button>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 absolute right-0 p-2 shadow"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end  -->
+        <!-- banner start  -->
+        <div class="">
+          <div class="flex justify-center w-full">
+            <img src="./assets/banner.png" alt="" />
+          </div>
+          <div class="w-full mx-auto text-center">
+            <div class="">
+              <h1
+                class="pt-6 space-y-6 text-3xl font-extrabold lg:text-6xl md:text-6xl text-primaryTextColor"
+              >
+                A barn house of this design has a <br />
+                striking appearance
+              </h1>
+              <p class="py-6 text-secondaryTextColor">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal<br>
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button
+                class="px-5 py-3 space-x-0 rounded-full bg-btnBgSecondary lg:inline-block md:inline-block"
+              >
+                <a
+                  class="px-5 text-xl font-extrabold rounded-full text-primayTextColor"
+                  >View Details</a
+                >
+                <span
+                  class="text-lg h-[32px] w-[32px] rounded-full inline-block -rotate-45 bg-btnBgPrimary "
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- banner end  -->
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
