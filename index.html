@@ -96,28 +96,18 @@
                 ></span>
               </button>
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-5 h-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
+                <div tabindex="0" role="button" class="flex items-center justify-center w-12 h-12 ml-4 bg-white rounded-full lg:hidden">
+                  <i class="text-lg fa-solid fa-bars text-[#737373]"></i>
                 </div>
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 absolute right-0 p-2 shadow"
                 >
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 3</a></li>
+                <li class="text-slate-800"><a>Home</a></li>
+                <li><a>Service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contacts Us</a></li>
                 </ul>
               </div>
             </div>
@@ -600,8 +590,111 @@
         </div>
       </section>
       <!-- Read Our Articles Section End  -->
-      <!-- Let’s Discuss Section Start  -->
+        <!-- customer review section start  -->
+        <section class="py-8 bg-center bg-no-repeat bg-cover lg:py-24 md:py-20 ">
+          <div class="container px-5 mx-auto lg:p-0 lg:w-[1170px]">
+             <!-- section heading start  -->
+          <div class="w-full text-center">
+            <button class="px-4 py-2 bg-[#ABEF5F] bg-opacity-20 rounded-full">
+              <i class="fa-solid fa-arrow-right"></i> Let’s Review
+            </button>
+            <h2
+              class="mt-4 text-2xl font-bold text-center lg:text-[40px] md:text-4xl text-primaryTextColor"
+            >
+              Read Our Customer Reviews
+            </h2>
+            <p class="my-6 text-base text-center text-secondaryTextColor">
+              The barn house captivates with its blend of rustic charm and
+              <br />
+              modern sophistication, featuring weathered wood, sleek metal
+              accents
+            </p>
+          </div>
+          <!-- section heading end  -->
+          <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
+            <!-- review one  -->
+            <div class="shadow-md card card-compact">
+              <div class="flex justify-center p-5 pb-0 avatar">
+                <div class="w-1/2 rounded-full">
+                  <img src="./assets/Review-1.jpeg" />
+                </div>
+              </div>
+              <div class="items-center text-center card-body">
+                <h2 class="card-title text-primaryTextColor">Ethan</h2>
+                <!-- rating start  -->
+                <div class="rating rating-sm">
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    class="bg-orange-400 mask mask-star-2"
+                    checked="checked" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                </div>
+                 <!-- rating end  -->
+                 <p class="secondaryTextColor">I recently transformed my living space with Rinterio, and I couldn't be happier! The selection of modern and stylish furniture is unparalleled. </p>
+              </div>
+            </div>
+            <!-- review two  -->
+            <div class="shadow-md card card-compact">
+              <div class="flex justify-center p-5 pb-0 avatar">
+                <div class="w-1/2 rounded-full">
+                  <img src="./assets/Review-2.jpeg" />
+                </div>
+              </div>
+              <div class="items-center text-center card-body">
+                <h2 class="card-title text-primaryTextColor">Oliver</h2>
+                
+                <!-- rating start  -->
+                <div class="rating rating-sm">
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    class="bg-orange-400 mask mask-star-2"
+                    checked="checked" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                </div>
+                 <!-- rating end  -->
+                 <p class="text-secondaryTextColor">I can't say enough good things about my experience with Rinterio! From start to finish, the process was seamless and enjoyable. </p>
+              </div>
+            </div>
+            <!-- review three -->
+            <div class="shadow-md card card-compact">
+              <div class="flex justify-center p-5 pb-0 avatar">
+                <div class="w-1/2 rounded-full">
+                  <img src="./assets/Review-1.jpeg" />
+                </div>
+              </div>
+              <div class="items-center text-center card-body">
+                <h2 class="card-title primaryTextColor">Henry</h2>
+                <!-- rating start  -->
+                <div class="rating rating-sm">
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input
+                    type="radio"
+                    name="rating-6"
+                    class="bg-orange-400 mask mask-star-2"
+                    checked="checked" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                  <input type="radio" name="rating-6" class="bg-orange-400 mask mask-star-2" />
+                </div>
+                 <!-- rating end  -->
+                 I decided to invest in a dining table and chairs for my home, and I must say, the craftsmanship is exceptional. The table is beautifully designed, and it has become the centerpiece of my dining area.
 
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </section>
+        <!-- customer review section end  -->
+      <!-- Let’s Discuss Section Start  -->
       <section
         class="py-8 bg-center bg-no-repeat bg-cover lg:py-24 md:py-20 bg-contact-bg"
       >
@@ -677,6 +770,7 @@
         </div>
       </section>
       <!-- Let’s Discuss Section End -->
+
     </main>
     <footer class="bg-[#1C1C1C]">
       <section
